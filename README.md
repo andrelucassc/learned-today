@@ -15,3 +15,7 @@ Notes:
 
 I tried very hard to make ntp work, but id did not, sometime failing to boot, sometimes not syncing and it does not integrate well with the builtin Pi's timedatectl.
 I also tried ansible-galaxy ntp role from [geerlingguy](https://github.com/geerlingguy/ansible-role-ntp) NTP role, but it did not work on my setup and I wasn't able to assess why.
+
+## Getting Pods on specific node
+
+* kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=<node>

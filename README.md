@@ -21,8 +21,8 @@
 
 Notes:
 
-I tried very hard to make ntp work, but id did not, sometime failing to boot, sometimes not syncing and it does not integrate well with the builtin Pi's timedatectl.
-I also tried ansible-galaxy ntp role from [geerlingguy](https://github.com/geerlingguy/ansible-role-ntp) NTP role, but it did not work on my setup and I wasn't able to assess why.
+I tried to make ntp work, but it did not, sometime it failed to boot, sometimes it did not sync and it does not integrate well with the builtin's Pi timedatectl.
+I also tried ansible-galaxy from [geerlingguy](https://github.com/geerlingguy/ansible-role-ntp) NTP role, but it did not work on my setup and I wasn't able to assess why.
 
 ## Getting Pods on specific node
 

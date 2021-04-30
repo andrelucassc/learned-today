@@ -4,6 +4,10 @@
 
 * sudo dpkg-reconfigure tzdata
 
+## Configuring Ubuntu firewall
+
+
+
 ## Configuring Rasperry Pi Time Sync
 
 * Disable ntp service
@@ -32,3 +36,6 @@ I also tried ansible-galaxy from [geerlingguy](https://github.com/geerlingguy/an
 
 * kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=<node>
 
+## Configuring PostgreSQL Database Config File
+
+(config)[https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/configuring-user-authentication]

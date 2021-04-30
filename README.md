@@ -38,4 +38,4 @@ I also tried ansible-galaxy from [geerlingguy](https://github.com/geerlingguy/an
 
 ## Configuring PostgreSQL Database Config File
 
-(config)[https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/configuring-user-authentication]
+[config](https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/configuring-user-authentication)

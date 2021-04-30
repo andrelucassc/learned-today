@@ -1,5 +1,9 @@
 # learned-today
 
+## Configuring Ubuntu Timezone
+
+* sudo dpkg-reconfigure tzdata
+
 ## Configuring Rasperry Pi Time Sync
 
 * Disable ntp service
@@ -27,3 +31,4 @@ I also tried ansible-galaxy from [geerlingguy](https://github.com/geerlingguy/an
 ## Getting Pods on specific node
 
 * kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=<node>
+

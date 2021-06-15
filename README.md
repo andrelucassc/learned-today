@@ -32,7 +32,12 @@ Notes:
 I tried to make ntp work, but it did not, sometime it failed to boot, sometimes it did not sync and it does not integrate well with the builtin's Pi timedatectl.
 I also tried ansible-galaxy from [geerlingguy](https://github.com/geerlingguy/ansible-role-ntp) NTP role, but it did not work on my setup and I wasn't able to assess why.
 
-## Getting Pods on specific node
+## Kubernetes
+### Setting current context permanently
+
+* kubectl config set-context --current --namespace=
+
+### Getting Pods on specific node
 
 * kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=<node>
 

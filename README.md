@@ -21,7 +21,7 @@
 * Set NTP pool below [Time]
   * NTP Server Pool config NTP=Pool1 Pool2 Pool3 Pool4
 * Enable and start systemd-timesyncd.service
-  * ansible group -m ansible.builtin.service -a "name=ntp state=started" -b
+  * ansible group -m ansible.builtin.service -a "name=systemd-timesyncd.service state=started" -b
 * Set timedatectl set-ntp true
   * ansible group -a "timedatectl set-ntp true" -b
 * timedatectl to check if the sync and service is on

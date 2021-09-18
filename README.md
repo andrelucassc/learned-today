@@ -43,7 +43,7 @@ I also tried ansible-galaxy from [geerlingguy](https://github.com/geerlingguy/an
  
 ### Setting node password
  
-Copy new node password from '/etc/rancher/node/password' to '/var/lib/rancher/k3s/server/cred/node-passwd'.
+Copy new node password from `/etc/rancher/node/password` to `/var/lib/rancher/k3s/server/cred/node-passwd`.
 
 ## Configuring PostgreSQL Database Config File
 

@@ -40,6 +40,10 @@ I also tried ansible-galaxy from [geerlingguy](https://github.com/geerlingguy/an
 ### Getting Pods on specific node
 
 * kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=<node>
+ 
+### Setting node password
+ 
+Copy new node password from '/etc/rancher/node/password' to '/var/lib/rancher/k3s/server/cred/node-passwd'.
 
 ## Configuring PostgreSQL Database Config File
 

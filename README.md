@@ -48,3 +48,9 @@ Copy new node password from `/etc/rancher/node/password` to `/var/lib/rancher/k3
 ## Configuring PostgreSQL Database Config File
 
 [config](https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/configuring-user-authentication)
+ 
+##  Setting pipe with xargs
+ 
+ Using xargs to to populate shell command:
+ 
+ `cat .variables | grep -Po '\/[\w\/-]+' | xargs -I{} sh -c 'mkdir $HOME"$1"' -- {}`

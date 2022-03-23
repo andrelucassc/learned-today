@@ -33,6 +33,12 @@ I tried to make ntp work, but it did not, sometime it failed to boot, sometimes 
 I also tried ansible-galaxy from [geerlingguy](https://github.com/geerlingguy/ansible-role-ntp) NTP role, but it did not work on my setup and I wasn't able to assess why.
 
 ## Kubernetes
+
+### Configuring RPI cluster k3s agent
+Installation followed in https://github.com/k3s-io/k3s-ansible.
+[Source](https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/)
+Add  `cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory` to `/boot/cmdline.txt`. 
+
 ### Setting current context permanently
 
 * kubectl config set-context --current --namespace=

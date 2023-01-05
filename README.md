@@ -62,3 +62,10 @@ Copy new node password from `/etc/rancher/node/password` to `/var/lib/rancher/k3
  Using xargs to to populate shell command:
  
  `cat .variables | grep -Po '\/[\w\/-]+' | xargs -I{} sh -c 'mkdir $HOME"$1"' -- {}`
+ 
+ ## Poetry
+ 
+ To configure poetry to use current active python version from pyenv:
+[Link]( https://github.com/python-poetry/poetry/issues/5947)
+ 
+ `poetry config virtualenvs.prefer-active-python true`

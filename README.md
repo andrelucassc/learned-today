@@ -33,3 +33,18 @@ Copy new node password from `/etc/rancher/node/password` to `/var/lib/rancher/k3
 [Link]( https://github.com/python-poetry/poetry/issues/5947)
  
  `poetry config virtualenvs.prefer-active-python true`
+ 
+ # DB
+ 
+ ## Oracle
+ 
+ Fetching last executed queries:
+ ```sql
+SELECT program_id, program_line#, sql_text
+FROM V$SQL VS , ALL_USERS AU
+WHERE (executions >= 1)
+AND (parsing_user_id != 0)
+AND (AU.user_id(+) = VS.parsing_user_id)
+AND UPPER(AU.USERNAME)  IN (UPPER('finances'))
+ORDER BY last_active_time DESC;
+ ```
